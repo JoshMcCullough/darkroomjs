@@ -154,7 +154,7 @@
     });
 
     dkrm.initialized.then(function() {
-      console.log('darkroom initialized', dkrm);
+      dkrm.plugins.crop.requireFocus();
     }).catch(function(e) {
       console.error('unable to initialize darkroom');
       throw e;
